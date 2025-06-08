@@ -1,0 +1,23 @@
+.banner-wrapper {
+    font-family: "Phudu", sans-serif;
+    padding: 2.5%;
+}
+
+.banner-section{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    gap: 4%;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.banner-text {
+color: white;
+font-size: 4em;
+font-weight: bold;
+text-align: center;
+white-space: nowrap;
+}

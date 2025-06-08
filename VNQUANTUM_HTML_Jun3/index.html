@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+  <title>VNQUANTUM Section</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/banner.css"/>
+  <link rel="stylesheet" href="./css/who-are-we.css" />
+  <link rel="stylesheet" href="./css/hero-carousel.css" />
+  <link rel="stylesheet" href="./css/marquee.css" />
+  <link rel="stylesheet" href="./css/info-cards.css" />
+  <link rel="stylesheet" href="./css/stacked-cards.css" />
+  <link rel="stylesheet" href="./css/footer.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anta&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gluten:wght@100..900&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Playwrite+VN:wght@100..400&family=Poetsen+One&family=Slackey&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div data-component="components/header.html"></div>
+  <div data-component="components/banner.html"></div>
+  <div data-component="components/who-are-we.html"></div>
+  <!--<div data-component="components/hero-carousel.html"></div>-->
+  <!--<div data-component="components/marquee.html"></div>-->
+  <div data-component="components/info-cards.html"></div>
+  <!--<div data-component="components/stacked-cards.html"></div>-->
+  <div data-component="components/footer.html"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const components = document.querySelectorAll('[data-component]');
+      components.forEach(async (component) => {
+        const path = component.getAttribute('data-component');
+        try {
+          const response = await fetch(path);
+          if (!response.ok) throw new Error(`Could not fetch ${path}`);
+          const text = await response.text();
+          component.innerHTML = text;
+        } catch (error) {
+          component.innerHTML = `<p style="color:red;">${error.message}</p>`;
+        }
+      });
+    });
+  </script>
+
+  <script src="js/components/stacked-cards.js"></script>
+
+</body>
+</html>

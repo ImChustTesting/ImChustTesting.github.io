@@ -1,0 +1,92 @@
+.header-hero-wrapper {
+    padding: 2.5%;
+}
+
+.header-hero-container {
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%; /* Was 40px */
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(253, 253, 253);
+}
+
+.header-hero-text {
+    flex: 1 1 40%;
+    max-width: 50%;
+}
+
+.header-hero-title {
+    font-size: 250%;
+    font-weight: 800;
+    color: #001F54;
+    border-radius: 3%;
+    margin-bottom: 2%;
+}
+
+.header-hero-description {
+    font-size: 100%;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2.5%;
+}
+
+.header-hero-button {
+    background-color: #0047FF;
+    padding: 2% 4%;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header-hero-button:hover {
+    background-color: #0033cc;
+}
+
+/* Carousel Styles */
+.header-carousel-outer {
+    height: 40%;
+    overflow: hidden;
+    border-radius: 2%;
+    position: relative;
+    min-width: 50%;
+}
+
+.header-carousel-outer::before,
+.header-carousel-outer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.header-carousel-outer::before {
+    top: 0;
+    background: linear-gradient(to bottom, #fff, transparent);
+}
+
+.header-carousel-outer::after {
+    bottom: 0;
+    background: linear-gradient(to top, #fff, transparent);
+}
+
+.header-carousel-inner {
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 20s infinite;
+    position: relative;
+    z-index: 1;
+}
+
+.header-carousel-img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
