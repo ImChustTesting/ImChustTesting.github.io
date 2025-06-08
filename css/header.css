@@ -89,6 +89,7 @@
     overflow: hidden;
     height: auto;
     width: 100%;
+    border:transparent;
 }
 
 .header-iframe-container iframe {
