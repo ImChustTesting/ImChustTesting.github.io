@@ -1,9 +1,10 @@
 .cards-container-sec {
   background: linear-gradient(180deg, #f5f5f5, #448cd9, #f5f5f5);
   padding: 4rem 2rem; /* Add padding for spacing */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Phudu', sans-serif;
   position: relative;
   overflow: hidden;
+  letter-spacing: 0.15rem;
 }
 
 .cards-container-sec::before,
@@ -45,8 +46,8 @@
   }
 
   .header-card-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 500;
     margin: 0;
 
     text-shadow: 
@@ -128,8 +129,9 @@
     gap: 1rem;
     line-height: 1.6;
     color: #000000;
-    font-size: 1.2rem;
-  
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     position: static;
     padding-left: 0; 
   }
