@@ -1,0 +1,155 @@
+
+.event-background{
+    background: linear-gradient(180deg, #f5f5f5, #b0d1ff);
+    padding: 4rem 2rem; /* Add padding for spacing */
+}
+
+.event-wrapper {
+    font-family: "Phudu", sans-serif;
+    background-color: #f5f1e6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 32px;
+    margin: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    padding-top: 0%;
+}
+
+.event-upper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: #000;
+}
+
+.event-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #efeeea;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    gap: 0px;
+    padding-left: 6%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.event-card:hover {
+transform: scale(1.02);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3%
+}
+
+.event-card-title {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 700;
+    margin: 0 0 0px 0;
+    color: #333;
+}
+
+.event-location, .event-time {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 0px 0;
+}
+
+.event-description {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 50;
+    line-height: 1;
+    flex-grow: 1;
+    font-family: "Arial", sans-serif;
+}
+
+.signup-button {
+    background-color: #c2deff;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    font-weight: bold;
+    font-family: "Phudu", sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.signup-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+    background-color: #afd0ff; /* Light blue background */
+    border-radius: 40px 40px 40px 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.placeholder-1 {
+    background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-447555541555/services/2f2323a7-33d3-4628-98f5-96155557db5c_2023-quantum-qiskit-events.png');
+}
+
+.placeholder-2 {
+     background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-447555541555/services/9c670a95-7313-43d9-9594-e366063e18a8_face-analysis-challenge.png');
+}
+
+
+.more-events-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-events-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    padding: 10px 20px 10px 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: "Phudu", sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.more-events-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.more-events-icon {
+  background-color: #e6defb;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
