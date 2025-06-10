@@ -16,7 +16,7 @@
 
 .banner-text {
 color: white;
-font-size: 4em;
+font-size: clamp(2em, 5vw, 4em);
 font-weight: bold;
 text-align: center;
 white-space: nowrap;
