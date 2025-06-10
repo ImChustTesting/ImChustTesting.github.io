@@ -28,58 +28,27 @@
     padding: 0 1.5rem; 
 }
 
-
-
-
-
 .community-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 20px; /* Increased gap for better spacing */
     align-items: flex-start;
 }
 
 .community-container-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     padding-top:8px;
 }
-
-.knowledge-card {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
-    border-radius: 16px;
-    padding: 40px;
+.community-container-col2 {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column;
+    gap: 8px; /* Gap between cards in the same column */
 }
 
-.knowledge-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.computing-card {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
-    border-radius: 16px;
-    padding: 32px 48px 32px 32px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.computing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.science-card {
+/* --- Common Card Styles (Refactored) --- */
+.community-card {
     background-color: #ffffff;
     border: 1px solid #f0f0f0;
     border-radius: 16px;
@@ -91,27 +60,20 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.science-card:hover {
+.community-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
+/* Individual card padding can be adjusted if needed, but a consistent padding is often better. */
+/* If you need specific padding for each, you can add them back, for example: */
+.knowledge-card {
+  padding: 40px;
+}
 .art-card {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
-    border-radius: 16px;
-    padding: 64px 48px 16px 32px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 64px 48px 16px 32px;
 }
 
-.art-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
 
 .knowledge-icon, .computing-icon, .science-icon, .art-icon {
     width: 64px;
@@ -120,12 +82,15 @@
     flex-shrink: 0;
 }
 
+.card-text {
+  flex-grow: 1;
+}
+
 .community-card-title {
     font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: bold;
-    margin: 0;
-    letter-spacing: 0.05em;
     margin: 0 0 8px 0;
+    letter-spacing: 0.05em;
     color: #000000;
 }
 
@@ -134,5 +99,18 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #555;
-    margin: 10px 0 20px 0;
+    margin: 0; /* Removed margin to align with title */
+}
+
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 768px) {
+    .community-wrapper {
+        padding: 3rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .community-container {
+        grid-template-columns: 1fr; /* Stack the columns into a single column */
+        gap: 8px;
+    }
 }
