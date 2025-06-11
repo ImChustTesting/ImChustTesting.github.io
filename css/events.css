@@ -70,12 +70,11 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .event-description {
-    font-size: 1.2rem;
-    color: black;
-    font-weight: 50;
-    line-height: 1;
-    flex-grow: 1;
-    font-family: "Arial", sans-serif;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #555;
+    margin: 10px 0 20px 0; 
 }
 
 .signup-button {
@@ -152,4 +151,11 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   height: 80px;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+@media (max-width: 576px){
+    .event-description {
+    font-size: 0.5rem;
+    line-height: 1.5;
+}
 }
