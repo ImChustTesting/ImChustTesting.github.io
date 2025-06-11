@@ -1,0 +1,95 @@
+
+.partner-wrapper {
+    background: linear-gradient(0deg, #f5f5f5, #b0d1ff);
+    font-family: "Phudu", sans-serif;
+    padding: 50px;
+}
+
+/* Container for the description and title */
+.partner-upper {
+    margin-bottom: 40px;
+}
+
+/* "Strong community needs strong partners" text */
+.partner-descriptions {
+    color: black;
+    font-size: clamp(0.5rem, 2.5vw, 1.15rem);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: 0px; 
+}
+
+/* "OUR PARTNERS" title */
+.partner-title {
+    color: #1a1a1a;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-weight: 600;
+}
+
+.partner-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(20px, 4vw, 40px);
+    padding: 20px 15px;
+}
+
+.partner-logo {
+    display: inline-flex;
+    border-radius: 35px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.partner-logo img {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .partner-logo-container {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .partner-logo {
+        width: 140px;
+        height: 140px;
+        border-radius: 30px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .partner-logo-container {
+        gap: 40px;
+    }
+
+    .partner-logo {
+        width: 160px;
+        height: 160px;
+        border-radius: 35px;
+    }
+}
+
+.logo-placeholder {
+    background-color: #f7d147;
+    font-weight: 900;
+}
+
+.placeholder-text-main {
+    font-size: 2rem;
+    color: #1a1a1a;
+    line-height: 1.1;
+}
+
+.placeholder-text-sub {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}

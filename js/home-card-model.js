@@ -1,5 +1,5 @@
-import { API_BASE_URL } from './config.js';
-import { DOMAIN_IP } from './config.js';
+/*import { API_BASE_URL } from './config.js';
+import { DOMAIN_IP } from './config.js';*/
 
 
 function truncateWords(text, count = 12) {

@@ -90,6 +90,12 @@
     height: auto;
     width: 100%;
     border:transparent;
+
+/*FallBack image incase iframe link die*/
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header-iframe-container iframe {
