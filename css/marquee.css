@@ -4,14 +4,17 @@
   }
   
   .marquee {
+    background-color: #9195d0;
     overflow: hidden;
     user-select: none;
     display: flex;
     gap: var(--gap);
     transform: rotate(0deg);
+    margin-bottom: 40px;
   }
   
   .marquee-content {
+    background-color: #9195d0;
     list-style: none;
     flex-shrink: 0;
     display: flex;
@@ -23,24 +26,24 @@
   }
 
   .text {
-    background: linear-gradient(to right, #ffd15d, #8cb2ff, #d4fffe);
+    background:white;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 600;
-    font-size: 200px;
+    font-size: 50px;
     white-space: nowrap;
   }
 
     @media (max-width: 480px) {
     .text {
-      font-size: 50px;
+      font-size: 25x;
     }
   }
   
   /* 🛠 KEYFRAMES MUST BE OUTSIDE media query */
   @keyframes marquee {
     to {
-      transform: translateX(calc(-50% - var(--gap)));
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }

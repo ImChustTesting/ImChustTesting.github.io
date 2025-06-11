@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/events.css"/>
   <link rel="stylesheet" href="./css/community.css"/>
   <link rel="stylesheet" href="./css/partners.css"/>
+  <link rel="stylesheet" href="./css/other-channels.css"
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +30,12 @@
   <div data-component="components/who-are-we.html"></div>
   <div data-component="components/community.html"></div>
   <!--<div data-component="components/hero-carousel.html"></div>-->
-  <!--<div data-component="components/marquee.html"></div>-->
   <div data-component="components/info-cards.html"></div>
   <div data-component="components/events.html"></div>
   <!--<div data-component="components/stacked-cards.html"></div>-->
   <div data-component="components/partners.html"></div>
+  <div data-component="components/marquee.html"></div>
+  <div data-component="components/other-channels.html"></div>
   <div data-component="components/footer.html"></div>
   
 
@@ -41,6 +43,7 @@
   <script src="js/navbar-model.js""></script>
   <script src="js/home-card-model.js"></script>
   <script src="js/partners.js"></script>
+  <script src="js/other-channels.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -55,7 +58,11 @@
 
           if (path === 'components/partners.html') {
            renderPartners(partnersData);
-         }
+          }
+
+          if (path === 'components/other-channels.html') {
+           renderSocialButtons(socialLinksData);
+          }
 
         } catch (error) {
           component.innerHTML = `<p style="color:red;">${error.message}</p>`;
