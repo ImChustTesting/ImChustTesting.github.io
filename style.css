@@ -1433,14 +1433,10 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     border-radius: 40px 40px 40px 10px;
     background-size: cover;
     background-position: center;
-}
-
-.placeholder-1 {
-    background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-447555541555/services/2f2323a7-33d3-4628-98f5-96155557db5c_2023-quantum-qiskit-events.png');
-}
-
-.placeholder-2 {
-     background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-447555541555/services/9c670a95-7313-43d9-9594-e366063e18a8_face-analysis-challenge.png');
+    overflow: hidden;
+    padding: 1rem;
+    background-clip: padding-box;
+    border: 1rem solid #afd0ff; 
 }
 
 
