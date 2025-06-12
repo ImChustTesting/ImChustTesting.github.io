@@ -980,11 +980,15 @@ white-space: nowrap;
     scroll-snap-align: start;
     margin-top: 5rem;
     transition: transform 0.3s ease;
-    min-height: 400px;
-    max-height: 80vh;  /* Adjust this value as needed */
+    min-height: 400px; /* Optional: ensures a decent minimum size on mobile */
     overflow-y: auto;
   }
   
+  @media (min-width: 1024px) {
+  .card {
+    height: 65vh;
+  }
+}
   
    
   

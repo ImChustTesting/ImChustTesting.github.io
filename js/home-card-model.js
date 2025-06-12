@@ -72,24 +72,24 @@ const mockApiData = {
     data: [
         {
             id: 1,
-            Title: "E-Commerce Platform Rebuild",
-            slug: "ecommerce-platform-rebuild",
+            Title: "ARTICLE 1",
+            slug: "ARTICLE 1",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
             main_banner: { url: "" } // Note: This image won't load, it's a placeholder path
         },
         {
             id: 2,
-            Title: "Mobile Banking App",
-            slug: "mobile-banking-app",
+            Title: "ARTICLE 2",
+            slug: "ARTICLE 2",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "ART | COMMUNITY",
             main_banner: { url: "" }
         },
         {
             id: 3,
-            Title: "Data Analytics Dashboard",
-            slug: "data-analytics-dashboard",
+            Title: "ARTICLE 3",
+            slug: "ARTICLE 3",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
             main_banner: { url: "" }
