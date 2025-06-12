@@ -605,21 +605,20 @@ white-space: nowrap;
 }
 
 .community-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
-    gap: 10px; /* Increased gap for better spacing */
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-.community-container-col1{
+.community-container-row1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
-    padding-top:8px;
 }
-.community-container-col2 {
+.community-container-row2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px; /* Gap between cards in the same column */
 }
 
@@ -640,15 +639,6 @@ white-space: nowrap;
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
-
-
-.knowledge-card {
-  padding: 40px;
-}
-.art-card {
-  padding: 64px 48px 16px 32px;
-}
-
 
 .knowledge-icon, .computing-icon, .science-icon, .art-icon {
     width: 128px;
@@ -777,7 +767,7 @@ white-space: nowrap;
     border-radius: 20px;
     padding: 1.5rem;
     width: 100%;
-    max-width: 395px;
+    max-width: 350px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
