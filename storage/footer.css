@@ -1,9 +1,3 @@
-/* General body styling for context */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-}
 
 .site-footer {
     background-color: #9394d3;
@@ -78,6 +72,7 @@ body {
 
 /* Navigation link sections (No changes here) */
 .footer-nav ul {
+    font-family: 'Montserrat', sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
