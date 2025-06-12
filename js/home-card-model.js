@@ -51,7 +51,7 @@ function createProjectCard(project) {
               </div>
               <p class="card__description">
                   ${shortDescription}
-                  <br><span style="font-style: italic; font-weight: bold; color: #1877f2;">Read more</span>
+                  <br><span style="font-style: italic; font-weight: bold; color: black;">Read more</span>
               </p>
           </div>
   
