@@ -33,6 +33,7 @@
     font-weight: 600;
     font-size: 50px;
     white-space: nowrap;
+    font-family: 'Phudu', sans-serif;
   }
 
     @media (max-width: 480px) {

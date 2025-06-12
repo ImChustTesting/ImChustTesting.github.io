@@ -31,19 +31,12 @@
   <div data-component="components/community.html"></div>
   <!--<div data-component="components/hero-carousel.html"></div>-->
   <div data-component="components/info-cards.html"></div>
+  <div data-component="components/stacked-cards.html"></div>
   <div data-component="components/events.html"></div>
-  <!--<div data-component="components/stacked-cards.html"></div>-->
   <div data-component="components/partners.html"></div>
   <div data-component="components/marquee.html"></div>
   <div data-component="components/other-channels.html"></div>
   <div data-component="components/footer.html"></div>
-  
-
-  <script src="js/components/stacked-cards.js"></script>
-  <script src="js/navbar-model.js""></script>
-  <script src="js/home-card-model.js"></script>
-  <script src="js/partners.js"></script>
-  <script src="js/other-channels.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -64,11 +57,24 @@
            renderSocialButtons(socialLinksData);
           }
 
+          if (path === 'components/stacked-cards.html') {
+          loadHomeProjects();
+        }
+
         } catch (error) {
           component.innerHTML = `<p style="color:red;">${error.message}</p>`;
         }
       });
     });
   </script>
+
+  <script src="js/navbar-model.js""></script>
+  <script type="module" src="./config.js"></script>
+  <script src="js/gsap-card.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script> 
+  <script type="module" src="js/home-card-model.js"></script>
+  <script src="js/partners.js"></script>
+  <script src="js/other-channels.js"></script>
 </body>
 </html>

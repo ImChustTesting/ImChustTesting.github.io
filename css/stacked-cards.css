@@ -1,3 +1,7 @@
+.new-section{
+  background: linear-gradient(180deg, #9dbbdb, #f5f5f5);
+}
+
 .card_list{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -105,10 +109,9 @@
   }
 
   .card__tags {
-    margin-left: auto;
     overflow: hidden;
     text-overflow: ellipsis;
-  
+    padding: 1rem;
   }
     
   .card__title-row {
@@ -229,12 +232,14 @@
     margin-bottom: 200px;
     padding: 0;
      display: block;
-  flex-direction: column; 
+  flex-direction: column;
+
+  --stack-cards-gap: 20px; 
   }
   
   .stack-cards__item  {
     position: sticky;
-    top: var(--space-sm);
+    top: 100px;   /*var(--space-sm)*/
     transform-origin: center top;
     
     /* background: #EFEFEF; */
