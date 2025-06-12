@@ -5,7 +5,7 @@
 }
 
 :root {
-    --gap: 4rem;
+    --gap: 2.5rem;
   }
 :root {
   --space-sm: 4em;
@@ -575,7 +575,7 @@ white-space: nowrap;
 
 
 .community-wrapper {
-  background: #f5f5f5;
+  background: linear-gradient(0deg, #9dbbdb, #f5f5f5);
   padding: 4rem 2rem; /* Add padding for spacing */
   font-family: 'Phudu', sans-serif;
   position: relative;
@@ -696,8 +696,8 @@ white-space: nowrap;
 
 
 .cards-container-sec {
-  background: linear-gradient(180deg, #f5f5f5, #448cd9, #9dbbdb);
-  padding: 4rem 2rem; /* Add padding for spacing */
+  background: linear-gradient(180deg, #f5f5f5, #448cd9, #f5f5f5);
+  padding: 4rem 1rem; /* Add padding for spacing */
   font-family: 'Phudu', sans-serif;
   position: relative;
   overflow: hidden;
@@ -766,7 +766,7 @@ white-space: nowrap;
   .cards-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     background: none; 
     padding: 0;
@@ -775,9 +775,9 @@ white-space: nowrap;
   .info-card {
     background:linear-gradient(135deg, #ffffff, #f9f9ff);
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1.5rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 395px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
@@ -799,15 +799,15 @@ white-space: nowrap;
   }
   
   .card-header img.icon {
-    width: 168px;
-    height: 168px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     flex-shrink: 0;
   }
   
   .card-header h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #000;
   }
@@ -828,9 +828,9 @@ white-space: nowrap;
     gap: 1rem;
     line-height: 1.6;
     color: #000000;
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     position: static;
     padding-left: 0; 
   }
@@ -1603,7 +1603,6 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     user-select: none;
     display: flex;
-    gap: var(--gap);
     transform: rotate(0deg);
     margin-bottom: 40px;
   }
@@ -1614,10 +1613,9 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     display: flex;
     min-width: 100%;
-    justify-content: space-between;
     align-items: center;
     gap: var(--gap);
-    animation: marquee 24s linear infinite;
+    animation: marquee 36s linear infinite;
   }
 
   .text {
@@ -1640,7 +1638,7 @@ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   /* 🛠 KEYFRAMES MUST BE OUTSIDE media query */
   @keyframes marquee {
     to {
-      transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(-100%);
     }
   }
 
