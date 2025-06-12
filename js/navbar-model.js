@@ -5,13 +5,13 @@ const navbarConfig = {
     logoLink: "index.html",
     logoSrc: "image/logo.png",
     navItems: [
-      { text: "Vibe", href: "about.html" },
-      { text: "Menu", href: "project_list.html" },
-      { text: "Diary", href: "diary.html" },
+      { text: "VNQUANTUM", href: "" },
+      { text: "VNQUANTUM", href: "" },
+      { text: "VNQUANTUM", href: "" },
     ],
     cta: {
       text: "JOIN COMMUNITY",
-      href: "https://www.instagram.com/vartner.agency/",
+      href: "",
       target: "_blank"
     }
   };
@@ -23,14 +23,15 @@ const navbarConfig = {
         <a style="z-index:9999" href="${navbarConfig.logoLink}">
           <img src="${navbarConfig.logoSrc}" class="logo" />
         </a>
+        <p style="font-family: 'Phudu', sans-serif; font-size: 20px; font-weight: 700;">VNQUANTUM</p>
   
         <ul class="nav-menu">
           ${navbarConfig.navItems.map(item => `
-            <li><a href="${item.href}">${item.text}</a></li>
+            <li style="font-family: 'Phudu', sans-serif";><a href="${item.href}">${item.text}</a></li>
           `).join('')}
         </ul>
   
-        <a href="${navbarConfig.cta.href}" target="${navbarConfig.cta.target}" class="cta-button">
+        <a href="${navbarConfig.cta.href}" target="${navbarConfig.cta.target}" class="cta-button" style="font-family: 'Phudu', sans-serif; font-weight: 700;">
           ${navbarConfig.cta.text}
         </a>
       </div>
@@ -41,7 +42,28 @@ const navbarConfig = {
     navbar.innerHTML = navbarHTML;
   
     document.body.prepend(navbar);
+
+    setupScrollAnimation();
   }
+
+  function setupScrollAnimation() {
+  console.log('navbar-model.js running');
+
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      navbar.classList.add('navbar--hidden');
+    } else {
+      navbar.classList.remove('navbar--hidden');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+}
   
   // === INITIALIZE ===
   document.addEventListener("DOMContentLoaded", loadNavbar);
