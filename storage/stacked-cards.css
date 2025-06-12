@@ -260,7 +260,8 @@
   
   .stack-cards__item  {
     position: sticky;
-    top: 100px;   /*var(--space-sm)*/
+    top: 100px;
+    bottom: 100px;   /*var(--space-sm)*/
     transform-origin: center top;
     
     /* background: #EFEFEF; */

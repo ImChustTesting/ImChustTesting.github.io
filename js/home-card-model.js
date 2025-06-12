@@ -76,7 +76,7 @@ const mockApiData = {
             slug: "ecommerce-platform-rebuild",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
-            main_banner: { url: "/uploads/project_banner_1.jpg" } // Note: This image won't load, it's a placeholder path
+            main_banner: { url: "" } // Note: This image won't load, it's a placeholder path
         },
         {
             id: 2,
@@ -84,7 +84,7 @@ const mockApiData = {
             slug: "mobile-banking-app",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "ART | COMMUNITY",
-            main_banner: { url: "/uploads/project_banner_2.jpg" }
+            main_banner: { url: "" }
         },
         {
             id: 3,
@@ -92,7 +92,7 @@ const mockApiData = {
             slug: "data-analytics-dashboard",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
-            main_banner: { url: "/uploads/project_banner_3.jpg" }
+            main_banner: { url: "" }
         }
     ]
 };
