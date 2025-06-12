@@ -31,7 +31,7 @@
 .community-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
-    gap: 20px; /* Increased gap for better spacing */
+    gap: 10px; /* Increased gap for better spacing */
     align-items: flex-start;
 }
 
@@ -65,8 +65,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Individual card padding can be adjusted if needed, but a consistent padding is often better. */
-/* If you need specific padding for each, you can add them back, for example: */
+
 .knowledge-card {
   padding: 40px;
 }
@@ -76,8 +75,8 @@
 
 
 .knowledge-icon, .computing-icon, .science-icon, .art-icon {
-    width: 64px;
-    height: 64px;
+    width: 128px;
+    height: 128px;
     object-fit: contain;
     flex-shrink: 0;
 }
