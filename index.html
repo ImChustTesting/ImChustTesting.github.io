@@ -49,6 +49,10 @@
           loadHomeProjects();
         }
 
+          if(path === 'components/events.html'){
+          renderEvents();
+        }
+
         } catch (error) {
           component.innerHTML = `<p style="color:red;">${error.message}</p>`;
         }
@@ -56,6 +60,7 @@
     });
   </script>
 
+  <script src="js/events.js"></script>
   <script src="js/navbar-model.js""></script>
   <script type="module" src="./config.js"></script>
   <script src="js/gsap-card.js"></script>
