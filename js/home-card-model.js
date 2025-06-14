@@ -76,7 +76,7 @@ const mockApiData = {
             slug: "ARTICLE 1",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
-            main_banner: { url: "image/mock1.png" } // Note: This image won't load, it's a placeholder path
+            main_banner: { url: "https://picsum.photos/seed/picsum/200/300" } // Note: This image won't load, it's a placeholder path
         },
         {
             id: 2,
@@ -84,7 +84,7 @@ const mockApiData = {
             slug: "ARTICLE 2",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "ART | COMMUNITY",
-            main_banner: { url: "image/mock1.png" }
+            main_banner: { url: "https://picsum.photos/seed/picsum/200/300" }
         },
         {
             id: 3,
@@ -92,7 +92,7 @@ const mockApiData = {
             slug: "ARTICLE 3",
             description: "Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article Some very first words of this article",
             tags_in_home: "COMPUTING | QUANTUM",
-            main_banner: { url: "image/mock1.png" }
+            main_banner: { url: "https://picsum.photos/seed/picsum/200/300" }
         }
     ]
 };
